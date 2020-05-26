@@ -26,10 +26,17 @@
 @font-face {
     font-family: 'Moontime';
     src: url('/assets/font/moontime/moontime-regular-webfont.woff2') format('woff2'),
-         url('moontime-regular-webfont.woff') format('woff');
+         url('/assets/font/moontime/moontime-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/font/monserrat/Montserrat-Regular.woff2') format('woff2'),
+         url('/assets/font/monserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Styles */
@@ -339,4 +346,32 @@ p > .emphasized {
 .learn-more .container {
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+/* About Page */
+
+.banner {
+  background-color: #D68538;
+  padding: 10px 0;
+}
+
+.banner .full-text, .banner .short-text {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+.banner .short-text {
+  display: none;
+}
+
+@media only screen and (max-width: 540px) {
+  .banner .full-text {
+    display: none;
+  }
+
+  .banner .short-text {
+    display: inline-block;
+  }
 }
