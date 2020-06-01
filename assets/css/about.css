@@ -1,0 +1,235 @@
+body {
+  overflow-x: hidden;
+}
+
+p, p *, b {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  text-align: left;
+  line-height: 2.6rem;
+}
+
+.fancy {
+  font-family: "Moontime";
+  letter-spacing: 0.1rem;
+}
+
+.about h3 {
+  font-family: "Glacial Indifference";
+  text-transform: uppercase;
+  transform: inherit;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+.about section {
+  padding: 6rem;
+}
+
+/* .about section:first-child {
+  padding-top: 6rem;
+} */
+
+/* My Story */
+
+.about .my-story {
+  /* .hero-background will extend outside the bounds of parent */
+  overflow: hidden;
+}
+
+.about .my-story .hero {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: 4fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.about .my-story .hero .content {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.about .my-story .hero .pic-container {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  height: 100%;
+}
+
+.about .my-story .hero .pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .my-story .hero .bio-start {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+}
+
+.about .hero-background {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  height: 100%;
+  z-index: -1;
+  background-color: #F2ECE5;
+
+  /* Extend background outside of parent */
+  width: 500%;
+  margin-left: -200%;
+  margin-top: -6rem;
+  padding-bottom: 6rem;
+}
+
+.about h1.fancy {
+  font-size: 8rem;
+  margin-bottom: 0;
+}
+
+.about h1.fancy > span.fancy {
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+
+.about .my-story h3 {
+  color: #8C3A27;
+}
+
+.about .my-story h3 ~ p {
+  margin-left: 5rem;
+}
+
+.about .my-story p.fancy {
+  font-size: 3rem;
+  color: #D98E73;
+}
+
+/* Work with Me */
+
+.about .work-with-me {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about .work-with-me img {
+  width: 100%;
+  height: auto;
+}
+
+.about .work-with-me h3 {
+  margin-top: -7rem; /* This is to keep center when the next section comes up into this section. See .my-beliefs */
+  color: #D5861C;
+}
+
+.about .work-with-me ul {
+  list-style-position: outside;
+  margin-left: 2rem; /* Should match grid gap size */
+}
+
+.about .work-with-me li, .about .work-with-me li b {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  text-align: left;
+  line-height: 2.6rem;
+}
+
+.about .work-with-me .blurb {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+
+  margin: 2rem 0;
+  padding: 0 4rem;
+  font-weight: 500;
+}
+
+/* My Beliefs */
+
+.about .my-beliefs-container {
+  background-color: #F2ECE5;
+  margin-top: -12rem; /* Prev. section padding + this section (inherited) padding */
+  padding-top: 8rem; /* Prev. section padding + 2rem of space */
+}
+
+.about .my-beliefs .shadowed {
+  text-shadow: -4px 4px #7B7E68;
+}
+
+.about .my-beliefs h2 {
+  font-size: 7rem;
+  text-transform: none;
+  font-weight: normal;
+
+  text-shadow: 1.5rem 0 white;
+}
+
+.about .my-beliefs .list {
+  background-color: white;
+  list-style: none;
+  padding: 3rem;
+}
+
+.about .my-beliefs .list p {
+  text-align: center;
+}
+
+.about .my-beliefs .list hr {
+  background-color: black;
+  width: 16rem;
+  height: 0.2rem;
+
+  border: 0;
+  margin: 3rem auto;
+}
+
+/* Fun Facts */
+
+.about .fun-facts {
+  background-color: white;
+  padding: 6rem 0;
+}
+
+.about .fun-facts h2 {
+  font-family: "Glacial Indifference";
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2.4rem;
+  text-align: left;
+}
+
+.about .fun-facts .fun-fact {
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  gap: 2rem;
+  align-items: center;
+
+  border: 4px #80856A solid;
+  background-color: #DEDEDE;
+}
+
+.fun-fact~.fun-fact {
+  margin-top: 2rem;
+}
+
+.about .fun-facts .fun-fact .fact-number {
+  font-family: "Glacial Indifference";
+  font-size: 7rem;
+  text-align: right;
+}
+
+.about .fun-facts .fun-fact p {
+  margin: 0;
+}

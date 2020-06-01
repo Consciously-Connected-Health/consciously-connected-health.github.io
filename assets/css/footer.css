@@ -1,0 +1,33 @@
+footer.sunny-container {
+  background-color: #A65437;
+  padding: 6rem 0;
+}
+
+footer .sunny {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+}
+
+.sunny *:first-child {
+  justify-self: left;
+}
+
+.sunny *:last-child {
+  justify-self: right;
+}
+
+.sunny a {
+  color: black;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.sunny .logo {
+  font-size: 4rem;
+}
+
+.sunny .copyright {
+  font-size: 1.2rem;
+  text-align: center;
+}
