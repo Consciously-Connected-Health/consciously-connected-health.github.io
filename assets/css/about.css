@@ -25,7 +25,22 @@ p, p *, b {
 }
 
 .about section {
-  padding: 6rem;
+  padding: 6rem 2rem;
+}
+
+.about .photo {
+  background-size: cover;
+
+  width: 100%;
+  padding-bottom: 133.33%; /* 3:4 Aspect Ratio */
+  overflow: hidden;
+}
+
+@media screen and (max-width: 850px) {
+  .about .photo {
+    background-position-y: 30%;
+    padding-bottom: 100%; /* 1:1 Aspect Ratio */
+  }
 }
 
 /* .about section:first-child {
@@ -55,13 +70,13 @@ p, p *, b {
   grid-row: 1;
 }
 
-.about .my-story .hero .pic-container {
+.about .my-story .hero .photo-container {
   grid-column: 2;
   grid-row: 1 / span 2;
   height: 100%;
 }
 
-.about .my-story .hero .pic-container img {
+.about .my-story .hero .photo-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -110,15 +125,53 @@ p, p *, b {
   color: #D98E73;
 }
 
+@media screen and (max-width: 850px) {
+  .about .my-story .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about .my-story .hero .content {
+    grid-column: 1;
+    grid-row: 2;
+
+    margin-bottom: 6rem;
+  }
+
+  .about .my-story .hero .photo-container {
+    grid-column: 1;
+    grid-row: 1;
+    height: 100%;
+  }
+
+  .about .my-story .hero .bio-start {
+    grid-row: 3;
+    align-self: auto;
+  }
+
+  .about .hero-background {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+    z-index: -1;
+    background-color: #F2ECE5;
+
+    /* Extend background outside of parent */
+    width: 500%;
+    margin-left: -200%;
+    margin-top: -6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 /* Work with Me */
 
 .about .work-with-me {
   display: grid;
-  grid-template-columns: 2fr 4fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
   justify-content: center;
-  align-items: center;
-
+  align-items: start;
 }
 
 .about .work-with-me img {
@@ -127,7 +180,7 @@ p, p *, b {
 }
 
 .about .work-with-me h3 {
-  margin-top: -7rem; /* This is to keep center when the next section comes up into this section. See .my-beliefs */
+  margin-top: 2rem;
   color: #D5861C;
 }
 
@@ -154,11 +207,17 @@ p, p *, b {
   font-weight: 500;
 }
 
+@media screen and (max-width: 850px) {
+  .about .work-with-me {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* My Beliefs */
 
 .about .my-beliefs-container {
   background-color: #F2ECE5;
-  margin-top: -12rem; /* Prev. section padding + this section (inherited) padding */
+  margin-top: -9rem; /* Prev. section padding + this section (inherited) padding */
   padding-top: 8rem; /* Prev. section padding + 2rem of space */
 }
 
@@ -193,11 +252,17 @@ p, p *, b {
   margin: 3rem auto;
 }
 
+@media screen and (max-width: 850px) {
+  .about .my-beliefs-container {
+    margin-top: 0;
+    padding-top: 6rem;
+  }
+}
+
 /* Fun Facts */
 
 .about .fun-facts {
   background-color: white;
-  padding: 6rem 0;
 }
 
 .about .fun-facts h2 {
