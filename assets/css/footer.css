@@ -8,25 +8,51 @@ footer .sunny {
   gap: 2rem;
 }
 
-.sunny *:first-child {
+.sunny .social-media-links {
   justify-self: left;
 }
 
-.sunny *:last-child {
+.sunny .terms-privacy {
   justify-self: right;
 }
 
 .sunny a {
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
+}
+
+.sun {
+  background-size: cover;
+
+  width: 34%;
+  padding-bottom: 17%;
+  overflow: hidden;
+
+  margin: 0 auto;
 }
 
 .sunny .logo {
   font-size: 4rem;
+  margin-top: -1rem;
 }
 
 .sunny .copyright {
   font-size: 1.2rem;
   text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  footer .sunny {
+    grid-template-columns: 1fr;
+  }
+
+  .sunny .social-media-links {
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .sunny .terms-privacy {
+    justify-self: center;
+  }
 }

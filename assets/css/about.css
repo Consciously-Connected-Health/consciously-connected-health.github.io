@@ -8,21 +8,6 @@
   letter-spacing: 0.3rem;
 }
 
-.about .photo {
-  background-size: cover;
-
-  width: 100%;
-  padding-bottom: 133.33%; /* 3:4 Aspect Ratio */
-  overflow: hidden;
-}
-
-@media screen and (max-width: 850px) {
-  .about .photo {
-    background-position-y: 30%;
-    padding-bottom: 100%; /* 1:1 Aspect Ratio */
-  }
-}
-
 /* .about section:first-child {
   padding-top: 6rem;
 } */
