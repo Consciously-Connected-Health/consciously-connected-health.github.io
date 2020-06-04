@@ -1,0 +1,318 @@
+/* Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Glacial Indifference", sans-serif;
+
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 6rem 2rem;
+}
+
+nav {
+  text-align: left;
+}
+
+nav a {
+  font-family: "Glacial Indifference"; /* Montserrat */
+  color: black;
+  text-transform: uppercase;
+  padding: 20px;
+  display: inline-block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p, p *, b {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  text-align: left;
+  line-height: 2.6rem;
+}
+
+.fancy {
+  font-family: "Moontime";
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+}
+
+p ~ * {
+  margin-top: 2rem;
+}
+
+.button {
+  color: white;
+  background-color: #CA8938;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.photo {
+  background-size: cover;
+
+  width: 100%;
+  padding-bottom: 133.33%; /* 3:4 Aspect Ratio */
+  overflow: hidden;
+}
+
+@media screen and (max-width: 850px) {
+  .photo {
+    background-position-y: 30%;
+    padding-bottom: 100%; /* 1:1 Aspect Ratio */
+  }
+}
+
+
+
+
+
+/*********alsjkdhalksjdhalkjshdaslkdfhjaskljdfhsad**************/
+
+/* Hero */
+
+.landing .hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  height: 560px;
+  text-align: right;
+}
+
+.landing .hero .blurb {
+  line-height: 1.6;
+  font-size: 1.8rem;
+
+  background-color: white;
+  padding: 4rem;
+  max-width: 30%;
+
+  position: absolute;
+  bottom: -9rem;
+  right: 0;
+}
+
+.landing .blurb .emphasized {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+  .landing .hero .blurb {
+    max-width: 50%;
+  }
+}
+
+/* Pitch */
+
+.landing .pitch {
+  background-color: #F2ECE4;
+}
+
+.landing h2 {
+  font-family: "Glacial Indifference";
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.landing h2 > .emphasized {
+  font-family: "Moontime";
+  font-size: 6rem;
+  padding-left: 1rem;
+
+  text-shadow: -4px 4px #7B7E68;
+  transform: rotate(-5deg);
+}
+
+.landing .pitch p {
+  text-align: center;
+}
+
+.landing .pitch p.emphasized, .landing .pitch p > .emphasized {
+  color: #823F2D;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.landing .pitch p > .emphasized {
+  font-weight: bold;
+}
+
+/* Mission */
+
+.landing .mission h2 {
+  font-family: "Glacial Indifference";
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  margin-bottom: 20px;
+}
+
+.landing .mission h2.underlined {
+  display: inline-block;
+  border-bottom: 1px black solid;
+  padding: 0 30px 8px 30px;
+}
+
+.landing .mission h2.shadowed {
+  text-shadow: -2px -2px white;
+}
+
+.landing .mission h3 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  display: block;
+  transform: rotate(-2deg);
+}
+
+/* About */
+
+.landing .landing-about-container {
+  background-color: #C59F8F;
+}
+
+.landing .landing-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.landing .landing-about h3 {
+  font-size: 6rem;
+}
+
+.landing .landing-about > *:not(.photo) {
+  padding: 2rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.landing .landing-about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 850px) {
+  .landing .landing-about {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Stay Tuned */
+
+.landing .stay-tuned {
+  background-color: #F1ECE5;
+}
+
+.landing .stay-tuned h2 {
+  text-transform: uppercase;
+  text-shadow: -2px -2px white;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+.landing .stay-tuned p {
+  text-align: center;
+  color: #8C3A27;
+}
+
+.landing .stay-tuned b {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* Newsletter */
+
+.landing .newsletter {
+  background-color: #9C583E;
+}
+
+/* Footer */
+
+.landing footer.sunny-container {
+  background-color: #F2ECE4;
+}
+
+/* ************************************************* */
+
+.landing .tint {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+
+  height: 100%;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.landing .hero-blurb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: white;
+}
+
+.landing .hero-blurb h1 {
+  font-family: cursive;
+  font-size: 48px;
+}
+
+.landing .hero-blurb p {
+  font-size: 18px;
+}
+
+.landing .learn-more {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  text-align: center;
+}
+
+.landing .learn-more .container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/**** General ****/
+
+html {
+  font-size: 62.5%; /* This makes px => rem conversion simple */
+}
+
+.site-container {
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}

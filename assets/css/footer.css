@@ -1,0 +1,40 @@
+footer.sunny-container {
+  padding: 6rem 2rem;
+}
+
+footer .sunny {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.sun {
+  background-size: cover;
+
+  width: 20%;
+  padding-bottom: 10%;
+  overflow: hidden;
+
+  margin: 0 auto;
+}
+
+.sunny .logo {
+  font-size: 4rem;
+  margin-top: -1rem;
+}
+
+.sunny .copyright {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.sunny .social-media-links {
+  grid-row: 2;
+}
+
+.sunny .social-media-links a {
+  color: black;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
