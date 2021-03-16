@@ -1,4 +1,51 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+    min: 1
+  label: Title
+  description: The title to your blog post
+  default: Something New
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: mm dd yyyy
+  default: now
+  description: By default, will post the date as *current date at time of publication
+  hidden: true
+- name: byline
+  type: text
+  config:
+    required: false
+  label: Byline
+  description: byline ("by Aly Eads")
+  hidden: false
+  default: by Aly Eads
+  showOnly:
+    field: toggle
+- name: toggle
+  type: boolean
+  label: Toggle
+  description: toggle
+  default: false
+- name: addNewPhoto
+  type: file
+  config:
+    maxSize: 64
+  label: Add new photo
+  description: 'Optional. Add a photo '
+- name: color
+  type: color
+  label: Color
+  config:
+    required: false
+    color_format: Hex
