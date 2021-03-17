@@ -49,3 +49,5 @@ fields:
   config:
     required: false
     color_format: Hex
+pages:
+- _posts/posts/test.md
