@@ -6,6 +6,7 @@ toggle: false
 addNewPhoto: ''
 color: ''
 layout: default
+body_class: post
 
 ---
 Hi
