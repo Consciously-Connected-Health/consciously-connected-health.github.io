@@ -5,6 +5,7 @@ byline: by Aly Eads
 toggle: false
 addNewPhoto: ''
 color: ''
+layout: default
 
 ---
 Hi
