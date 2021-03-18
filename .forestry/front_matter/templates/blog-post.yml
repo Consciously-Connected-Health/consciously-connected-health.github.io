@@ -15,13 +15,16 @@ fields:
   label: Date
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format: MM/DD/YYYY
+    time_format: h:mm A ZZ
     display_utc: false
-    export_format: mm dd yyyy
+    export_format: MM DD YYYY
   default: now
   description: By default, will post the date as *current date at time of publication
-  hidden: true
+  hidden: false
+  showOnly:
+    field: toggle
+    value: false
 - name: byline
   type: text
   config:
