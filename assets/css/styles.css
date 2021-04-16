@@ -78,7 +78,13 @@ p ~ * {
   }
 }
 
-
+.photo .blogphoto {
+  position:relative;
+  display: block;
+  max-height: 300px;
+  width:100%;
+  overflow: hidden;
+}
 
 
 
@@ -321,6 +327,7 @@ html {
 /**** Blog ****/
 .rect-image-container {
   position: relative;
+  max-height: 400px;
 }
 
 .rect-image-container::after {
@@ -331,6 +338,15 @@ html {
 }
 
 .rect-image {
+  position:absolute;
+  max-height: 400px;
+  width:auto;
+  left:0;
+  margin-left: 5%;
+  background-position: center;
+  object-fit: cover;
+}
+.circ-image {
   position:absolute;
   width: 90%;
   height: 90%;
