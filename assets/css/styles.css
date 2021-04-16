@@ -329,7 +329,13 @@ html {
 .post_container {
   position:relative;
   max-height:300px;
+  margin-bottom: 10%;
   overflow-y: hidden;
+}
+
+.post_container .post_newsletter {
+  position:absolute;
+  bottom:0;
 }
 
 .post_container img{
