@@ -63,5 +63,4 @@ fields:
     value: true
   default: "/assets/img/hero.jpg"
 pages:
-- _posts/posts/test.md
 - _posts/something-new.md
