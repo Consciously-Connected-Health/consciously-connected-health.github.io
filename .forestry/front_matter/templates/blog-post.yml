@@ -51,7 +51,8 @@ fields:
   type: boolean
   label: Include photo
   default: true
-  description: Defaults to being ON.
+  description: Defaults to being ON. Turn off if you only want to load a photo here
+    for thumbnails, but would rather choose other  images for the blog post.
 - name: blog_image
   type: file
   config:
@@ -59,7 +60,6 @@ fields:
   label: Add new photo
   description: 'Optional. Add a photo '
   showOnly:
-    field: include_photo
     value: true
   default: "/assets/img/hero.jpg"
 pages:
