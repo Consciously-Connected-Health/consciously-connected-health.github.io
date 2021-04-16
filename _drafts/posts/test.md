@@ -24,4 +24,4 @@ Howdy!
 
 _Howdy._
 
-I do get the sense that the image will need to be in a div to contain its size. We shall see if I am correct shortly.
+# I do get the sense that the image will need to be in a div to contain its size. We shall see if I am correct shortly.
