@@ -3,7 +3,7 @@ title: Test
 date: 03 17 2021
 byline: by Aly Eads
 toggle: false
-addNewPhoto: "/assets/img/rising_sun.png"
+addNewPhoto: "/assets/img/about/hi_im_aly.jpg"
 color: ''
 layout: posts
 body_class: post
