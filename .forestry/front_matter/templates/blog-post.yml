@@ -8,12 +8,12 @@ fields:
     required: false
   label: Layout
   default: default
-- name: body_class
+- name: description
   type: text
   config:
     required: false
-  label: Body Class
-  default: post
+  label: Description
+  description: Short paragraph at the beginning of the post
 - name: title
   type: text
   config:
@@ -37,32 +37,21 @@ fields:
   showOnly:
     field: toggle
     value: false
-- name: byline
+- name: author
   type: text
   config:
     required: false
-  label: Byline
+  label: Author
   description: byline ("by Aly Eads")
   hidden: false
   default: by Aly Eads
   showOnly:
     field: toggle
-- name: toggle
-  type: boolean
-  label: Toggle
-  description: toggle
-  default: false
 - name: addNewPhoto
   type: file
   config:
     maxSize: 64
   label: Add new photo
   description: 'Optional. Add a photo '
-- name: color
-  type: color
-  label: Color
-  config:
-    required: false
-    color_format: Hex
 pages:
 - _posts/posts/test.md
