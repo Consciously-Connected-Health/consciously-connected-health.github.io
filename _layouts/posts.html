@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <!-- CSS Media Queries -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/about.css">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
     <!-- Flodesk -->
     <script>
@@ -40,32 +44,103 @@
 
   </head>
   
-  <body class="{{ page.body_class }}">
+  <body class="site_container">
     {% include banner.html %}
 
     {% include navigation.html %}
-  
+  <!--
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+-->
+<!-- from bootstrap -->
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+ <main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+          <h1 class="fancy">
+            Writing
+          </h1>
+
+          <div class="landing">
+            <h2 class="mission">{{ page.title }}</h2>
+            <span class="post-date"> {{ page.date | date_to_string}} <a href="#"> {{page.author}} </a></span>
+
+            <p><em>
+              {{ page.description }}</em>
+            </p>
+
+
+<!-- This MAY BREAK, CHECK FORESTRY IMG SYNTAX -->
+            <div class="container">
+              <div class="photo">
+                {{page.blog_image}}
+              </div>
+            </div>
+
+
+<!-- Newsletter Plug before Content (INSERT DESCRIPTION ABOVE) -->
+            <span><p> Never miss a post! Subscribe to the Consciously Connected Health newsletter here!</p>
+              <section class="newsletter">
+                <div class="site-container">
+                   <div id="fd-form-5e8518f0995c960026dfdb8a"></div>
+                 <script>
+                    window.fd('form', {
+                        formId: '5e8518f0995c960026dfdb8a',
+                        containerEl: '#fd-form-5e8518f0995c960026dfdb8a'
+                        });
+                 </script>
+                </div>
+              </section>
+            </span>
+
+          {{ content }}
+          </div>
+
+          <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="#">Older</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+<!-- Blog sidebar with Name, Short bio, picture, and related posts -->
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-3 mb-3 bg-light rounded">
+            <h1 class="fancy">About</h1>
+
+            <div class="rect-image-container">
+             <img class="rect-image" src= "/assets/img/me.jpg" alt="Avatar">
+            </div>
+
+            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+
+<!-- Related posts in sidebar -->
+      <div class="related">
+        <h2>Related Posts</h2>
+           <ul class="related-posts">
+              {% for post in site.related_posts limit:3 %}
+              <li>
+               <h3>
+                <a href="{{ post.url }}">
+                  {{ post.title }}
+                <small>{{ post.date | date_to_string }}</small>
+                </a>
+              </h3>
+           </li>
+          {% endfor %}
+       </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+
+
+
+
+    
+
    {% include footer.html %}
   </body>
 </html>

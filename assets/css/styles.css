@@ -316,3 +316,27 @@ html {
     margin: 0 auto;
     position: relative;
 }
+
+
+/**** Blog ****/
+.rect-image-container {
+  position: relative;
+}
+
+.rect-image-container::after {
+  content: "";
+  display: block;
+  background-position: center;
+  padding-bottom: 100%;
+}
+
+.rect-image {
+  position:absolute;
+  width: 90%;
+  height: 90%;
+  left:0;
+  margin-left: 5%;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
