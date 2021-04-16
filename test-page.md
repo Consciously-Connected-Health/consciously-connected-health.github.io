@@ -5,9 +5,9 @@ title: Test Page
 published: false
 
 ---
-# **Services Offered**
+## **Services Offered**
 
-* **The Whole Shebang:** You and me will develop a close working relationship as we embark on the journey toward sustainable, healthy, and conscious living. 
-* **Food Focus:** We will focus on meal planning, techniques for selecting and cooking wholesome meals, and more. 
+* **The Whole Shebang:** You and me will develop a close working relationship as we embark on the journey toward sustainable, healthy, and conscious living.
+* **Food Focus:** We will focus on meal planning, techniques for selecting and cooking wholesome meals, and more.
 
 ### Contact me today to get started!
