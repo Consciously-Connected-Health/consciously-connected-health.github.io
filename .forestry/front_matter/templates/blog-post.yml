@@ -47,12 +47,21 @@ fields:
   default: by Aly Eads
   showOnly:
     field: toggle
-- name: addNewPhoto
+- name: include_photo
+  type: boolean
+  label: Include photo
+  default: true
+  description: Defaults to being ON.
+- name: blog_image
   type: file
   config:
     maxSize: 64
   label: Add new photo
   description: 'Optional. Add a photo '
+  showOnly:
+    field: include_photo
+    value: true
+  default: "/assets/img/hero.jpg"
 pages:
 - _posts/posts/test.md
 - _posts/something-new.md
