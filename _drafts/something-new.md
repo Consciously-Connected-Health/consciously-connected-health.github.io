@@ -1,11 +1,13 @@
 ---
 layout: posts
 title: Something New
-date: 04 16 2021
-author: by Cousin Mark
+date: 04 15 2021
+author: by Aly
 description: This is another Test Post. This time, seeing how the "Related Posts"
   section works is key.
-addNewPhoto: ''
+addNewPhoto: "/assets/img/hero.jpg"
+include_photo: true
+blog_image: "/assets/img/hero.jpg"
 
 ---
 **Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
