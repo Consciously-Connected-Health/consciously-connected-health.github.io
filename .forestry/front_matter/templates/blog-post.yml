@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Layout
-  default: default
+  default: posts
 - name: description
   type: text
   config:
