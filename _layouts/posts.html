@@ -67,10 +67,12 @@
 
 
 <!-- This MAY BREAK, CHECK FORESTRY IMG SYNTAX -->
-          {% if blog_photo !=  ""%}
-          <div class="container">
-               {{page.blog_image}}
-          </div>
+          {% if include_photo == True %}
+
+            <div class="post_container">
+               <img src="{{page.blog_image}}" class="img-fluid" alt="Focus Image">
+            </div>
+
           {% endif %}
 
 

@@ -325,6 +325,18 @@ html {
 
 
 /**** Blog ****/
+
+.post_container {
+  position:relative;
+  max-height:300px;
+  overflow-y: hidden;
+}
+
+.post_container img{
+  max-height:600px;
+}
+
+
 .rect-image-container {
   position: relative;
   max-height: 400px;
