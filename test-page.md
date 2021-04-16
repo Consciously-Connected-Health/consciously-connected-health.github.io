@@ -1,5 +1,5 @@
 ---
-body_class: about
+body_class: work-with-me
 layout: default
 title: Test Page
 published: false
