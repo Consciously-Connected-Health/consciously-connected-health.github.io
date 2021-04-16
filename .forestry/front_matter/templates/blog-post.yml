@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Layout
-  default: default
+  default: posts
 - name: description
   type: text
   config:
@@ -55,3 +55,4 @@ fields:
   description: 'Optional. Add a photo '
 pages:
 - _posts/posts/test.md
+- _posts/something-new.md
