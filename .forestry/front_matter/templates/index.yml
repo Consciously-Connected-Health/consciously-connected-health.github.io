@@ -11,3 +11,4 @@ fields:
 - type: text
   name: body_class
   label: body_class
+  default: about
