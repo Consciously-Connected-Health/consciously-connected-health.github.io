@@ -55,3 +55,4 @@ fields:
   description: 'Optional. Add a photo '
 pages:
 - _posts/posts/test.md
+- _posts/something-new.md
