@@ -70,9 +70,11 @@
 
 
 <!-- This MAY BREAK, CHECK FORESTRY IMG SYNTAX -->
+          {% if blog_photo !=  ""%}
           <div class="container">
-                <img src= {{page.blog_image}} class="img-fluid">
+               {{page.blog_image}}
           </div>
+          {% endif %}
 
 
 <!-- Newsletter Plug before Content (INSERT DESCRIPTION ABOVE) -->
@@ -105,12 +107,15 @@
       <div class="p-3 mb-3 bg-light rounded">
             <h1 class="fancy">About</h1>
 
+            {% if page.author == "Aly"%}
+
             <div class="rect-image-container">
              <img class="circ-image" src= "/assets/img/me.jpg" alt="Avatar">
             </div>
 
-            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p class="mb-0">Hi, my name is <em>Aly Eads</em>. I write about the challenges facing us on our journey to wholesome and happy living.</p>
           </div>
+          {% endif %}
 
 <!-- Related posts in sidebar -->
       <div class="related">
