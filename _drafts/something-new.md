@@ -1,7 +1,7 @@
 ---
 layout: posts
-title: Something New
-date: 04 15 2021
+title: Just Another Test Blog
+date: 2021-04-15 2:00 PM
 author: by Aly
 description: This is another Test Post. This time, seeing how the "Related Posts"
   section works is key.
