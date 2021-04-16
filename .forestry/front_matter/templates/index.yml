@@ -12,3 +12,5 @@ fields:
   name: body_class
   label: body_class
   default: about
+pages:
+- test-page.md
