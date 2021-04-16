@@ -1,0 +1,13 @@
+---
+label: Index
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: body_class
+  label: body_class
