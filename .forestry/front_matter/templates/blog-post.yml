@@ -63,4 +63,5 @@ fields:
     value: true
   default: "/assets/img/hero.jpg"
 pages:
+- _posts/health-and-healing-is-not-a-solo-journey.md
 - _posts/something-new.md
