@@ -26,13 +26,13 @@ It is vital to have support and accountability through it all.⁣
 
 ⁣
 
-##### Find your team 
+#### Find your team
 
 Maybe it consists of a doctor, a masseuse, a therapist, a close friend, a spouse or other family member, a coach, a community, etc. As many individuals that you need, and ones that you trust and are aligned to you and your values. ⁣
 
 ⁣
 
-##### Learn to ask for help when you need it 
+#### Learn to ask for help when you need it
 
 Both big and small things can be equally challenging to vocalize that we need help, but both are significant. Opinions, guidance, emotional and physical support, household chores, staying accountable, motivation, etc. These are all things that might require you to vocalize your truth and speak up for what you are needing. ⁣
 
