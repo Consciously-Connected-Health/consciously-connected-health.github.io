@@ -26,7 +26,7 @@ It is vital to have support and accountability through it all.⁣
 
 ⁣
 
-#### Find your team
+## Find your team
 
 Maybe it consists of a doctor, a masseuse, a therapist, a close friend, a spouse or other family member, a coach, a community, etc. As many individuals that you need, and ones that you trust and are aligned to you and your values. ⁣
 
